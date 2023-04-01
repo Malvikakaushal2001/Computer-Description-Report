@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Computer Report</title>
+	<style>
+		/* Report styles */
+		h1 {
+			text-align: center;
+			color: #006699;
+			font-size: 36px;
+		}
+		table {
+			margin: auto;
+			border-collapse: collapse;
+			border: 5px solid black; /* Change border color to black */
+  			width: 90%;
+			height: 420px;
+ 			background-color: pink; /* Add yellow background color */
+		}
+		
+		th, td {
+			border: 5px solid black;
+			padding: 10px;
+			text-align: left;
+		}
+		th {
+			background-color: #006699;
+			color: #fff;
+		}
+
+		/* Favorites menu styles */
+		#favorites {
+			position: fixed;
+			top: 0;
+			left: 0;
+			padding: 10px;
+			background-color: #f2f2f2;
+			box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+		}
+		#favorites ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		#favorites li {
+			display: inline-block;
+			margin-right: 10px;
+			font-size: 18px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: color 0.3s;
+		}
+		#favorites li:hover {
+			color: #006699;
+		}
+	</style>
+</head>
+<body background="E:\E_backed\8th semester\open source\119973.jpg">
+	<div id="favorites">
+		<ul>
+			<li id="motherboard">Motherboard</li>
+			<li id="network">Network</li>
+			<li id="storage">Storage Devices</li>
+			<li id="display">Display</li>
+		</ul>
+	</div>
+	<br>
+	<h1><font color="black">Computer Description Report</font></h1>
+	<table >
+		<tr>
+			<th>Tools Used</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td><b>LSHW</b></td>
+			<td>LSHW is a free and open-source software tool for <b>Linux and other Unix-like systems</b> that 
+				provides detailed information about the hardware components of a computer system.</td>
+		</tr>
+		<tr>
+			<td><b>DMIDE CODE</b></td>
+			<td>DMIDECODE is a free and open-source software tool for <b>Linux and other Unix-like systems</b> that provides detailed information about the system's hardware components,
+				 including the BIOS, motherboard, CPU, memory, and other peripheral devices.</td>
+		</tr>
+		<tr>
+			<td><b>HWINFO <font color="Red">Installed in Windows</font></b></td>
+			<td>HWiNFO is a free and open-source system information tool that provides detailed 
+				information about the hardware components of your computer. <b>The main advantages of HWiNFO is its ability to provide real-time monitoring of system components.</b></td>
+		</tr>
+		<tr>
+			<td><b>Free PC Audit <font color="Red">Installed in Windows</font></b></td>
+			<td>Free PC Audit is a software program that allows you to gather information about your computer's hardware and software components. 
+				This information can be used to troubleshoot issues, perform maintenance tasks, and plan upgrades</td>
+		</tr>
+	</table>
+	<script>
+		document.getElementById("motherboard").addEventListener("click", function() {
+			alert("ASUS Prime B450M-A/CSM Micro ATX Motherboard");
+		});
+		document.getElementById("network").addEventListener("click", function() {
+			alert("Realtek Gigabit Ethernet controller");
+		});
+		document.getElementById("storage").addEventListener("click", function() {
+			alert("500GB Samsung 970 EVO NVMe SSD and 2TB Seagate Barracuda HDD");
+		});
+		document.getElementById("display").addEventListener("click", function() {
+			alert("Dell UltraSharp U2415 24-inch monitor");
+		});
+	</script>
+</body>
+</html>
