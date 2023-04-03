@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Computer Report</title>
+	<link rel="stylesheet" href="index.css">
+	<script>
+function myFunction() {
+  alert("I am an alert box!");
+}
+	</script>
+</head>
+
+<body background="E:\E_backed\8th semester\open source\Computer-Description-Report\img\119973.jpg">
+	<div class="navbar">
+		<div class="navigations">
+			<ul>
+				<li id="lshw"><a href="./lshw.html" " target=" _blank" class="links_style">LSHW</a></li>
+				<li id="dmidecode"><a href="./dmidecode.html" target="_blank" class="links_style">DmideCode</a></li>
+				<li id="hwinfo"><a href="./hwinfo.html" target="_blank" class="links_style">HWInfo</a></li>
+				<li id="freepc"><a href="./freepc.html" target="_blank" class="links_style">Free PC Audit</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Favourites</button>
+			<div class="dropdown-content">
+				<a href="#" id="motherboard">Motherboard</a>
+				<a href="#" id="storage">Storage</a>
+				<a href="#" id="network">Network Devices</a>
+				<a href="#" id="display">Display</a>
+			</div>
+		</div>
+
+
+	</div>
+
+	<br>
+	<div class="heading_container">
+		<h1 class="heading_com">Computer Description Report</h1>
+	</div>
+	<table>
+		<tr class="table_heading">
+			<th>Tools Used</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td><b>LSHW</b></td>
+			<td>LSHW is a free and open-source software tool for <b>Linux and other Unix-like systems</b> that
+				provides detailed information about the hardware components of a computer system.</td>
+		</tr>
+		<tr>
+			<td><b>DMIDE CODE</b></td>
+			<td>DMIDECODE is a free and open-source software tool for <b>Linux and other Unix-like systems</b> that provides
+				detailed information about the system's hardware components,
+				including the BIOS, motherboard, CPU, memory, and other peripheral devices.</td>
+		</tr>
+		<tr>
+			<td><b>HWINFO <font color="Red">Installed in Windows</font></b></td>
+			<td>HWiNFO is a free and open-source system information tool that provides detailed
+				information about the hardware components of your computer. <b>The main advantages of HWiNFO is its ability to
+					provide real-time monitoring of system components.</b></td>
+		</tr>
+		<tr>
+			<td><b>Free PC Audit <font color="Red">Installed in Windows</font></b></td>
+			<td>Free PC Audit is a software program that allows you to gather information about your computer's hardware and
+				software components.
+				This information can be used to troubleshoot issues, perform maintenance tasks, and plan upgrades</td>
+		</tr>
+	</table>
+	<script>
+		document.getElementById("motherboard").addEventListener("click", function() {
+			alert("ASUS Prime B450M-A/CSM Micro ATX Motherboard");
+		});
+		document.getElementById("network").addEventListener("click", function() {
+			alert("Realtek Gigabit Ethernet controller");
+		});
+		document.getElementById("storage").addEventListener("click", function() {
+			alert("500GB Samsung 970 EVO NVMe SSD and 2TB Seagate Barracuda HDD");
+		});
+		document.getElementById("display").addEventListener("click", function() {
+			alert("Dell UltraSharp U2415 24-inch monitor");
+		});
+	</script>
+</body>
+
+
+</html>
